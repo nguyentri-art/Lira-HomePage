@@ -8,7 +8,7 @@ import useTitle from '../../hooks/useTitle'
 import PulseLoader from 'react-spinners/PulseLoader'
 
 const Login = () => {
-    useTitle('Employee Login')
+    useTitle('Dream Login')
 
     const userRef = useRef()
     const errRef = useRef()
@@ -45,7 +45,7 @@ const Login = () => {
             } else if (err.status === 400) {
                 setErrMsg('Missing Username or Password');
             } else if (err.status === 401) {
-                setErrMsg('Unauthorized');
+                setErrMsg('Unauthorized == This in handleSubmit');
             } else {
                 setErrMsg(err.data?.message);
             }
