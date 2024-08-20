@@ -211,6 +211,10 @@ body.index-page {
   top: 0; /* Position it at the top */
   width: 100%; /* Full width */
   opacity: 0.9;
+
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
 }
 
 .headerNavibar {
