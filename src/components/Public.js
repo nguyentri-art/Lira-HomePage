@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
+import { DiMitlicence,DiCode ,DiCoda,DiNpm   } from "react-icons/di";
 
 const Public = () => {
     const content = (
@@ -26,7 +27,7 @@ const Public = () => {
                     <div class="container_Hero">
                         <div class="container_Hero_Text">
                         <h1>--Little Dream--</h1>
-                        <p>We are team of talented designers making websites,software and more art !</p>
+                        <p>We are team of talented designers making software and more .</p>
                         </div>
                         <img src="assets/img/hero-img.png" className="img-fluid_animated" alt=""/>
                     </div>
@@ -37,30 +38,33 @@ const Public = () => {
 
                 <div className="container" data-aos="fade-up">
 
-                    <div class="row gy-4">
-
-                        <div class="col-xl-2 col-md-3 col-6 client-logo">
+                    <div class="container_clients">
+{/* 
+                        <div class="client-logo">
                         <img src="assets/img/clients/client-1.png" class="img-fluid" alt=""/>
+                        </div> */}
+                        <div class="client-logo">
+                        <img src="assets/img/clients/client-2.png" alt=""/>
                         </div>
 
-                        <div class="col-xl-2 col-md-3 col-6 client-logo">
-                        <img src="assets/img/clients/client-2.png" class="img-fluid" alt=""/>
+                        <div class="client-logo">
+                        <img src="assets/img/clients/client-3.png" alt=""/>
                         </div>
 
-                        <div class="col-xl-2 col-md-3 col-6 client-logo">
-                        <img src="assets/img/clients/client-3.png" class="img-fluid" alt=""/>
+                        <div class="client-logo">
+                        <img src="assets/img/clients/client-4.png" alt=""/>
                         </div>
 
-                        <div class="col-xl-2 col-md-3 col-6 client-logo">
-                        <img src="assets/img/clients/client-4.png" class="img-fluid" alt=""/>
+                        <div class="client-logo">
+                        <img src="assets/img/clients/client-5.png" alt=""/>
                         </div>
 
-                        <div class="col-xl-2 col-md-3 col-6 client-logo">
-                        <img src="assets/img/clients/client-5.png" class="img-fluid" alt=""/>
+                        <div class="client-logo">
+                        <img src="assets/img/clients/client-6.png" alt=""/>
                         </div>
 
-                        <div class="col-xl-2 col-md-3 col-6 client-logo">
-                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt=""/>
+                        <div class="client-logo">
+                        <img src="assets/img/clients/client-7.png" alt=""/>
                         </div>
 
                     </div>
@@ -69,34 +73,34 @@ const Public = () => {
 
             </section>
             <section id="about" class="aboutSection">
-                <div className="container section-title" >
+                <div className="containerAbout_tittle" >
                     <h2>About Us</h2>
-                    <p>We are passion </p>
                 </div>
-                <div className="aboutContainer"> 
-                        
-                        <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
-
-
+                <div className="containerAbout"> 
+                        <div className="aboutContainer_text">
+                            <h3>Little Dream Studio</h3>
+                            <p>
+                                We’re passionate about bringing imagination to life. Our multidisciplinary team thrives on innovation, collaboration, and pushing boundaries.
+                                We emerged from a shared vision: to create exceptional experiences that resonate across digital realms. Our journey began with a handful of dreamers, and today, we stand as a powerhouse of creativity.
+                            </p>
+                            <a href="#contact" className="aboutButton"><span>Connect Us</span> </a>
+                        </div>
+                        <div class="aboutContainer_box">
                             <div class="iconBox">
-                                <i class="bi bi-briefcase"></i>
-                                <h4><a href="" class="stretched-link">Corporis voluptates sit</a></h4>
-                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                                <h4> <i className="iconImage"><DiMitlicence /></i> Software Development</h4>
+                                <p>We’re not just coders; we’re architects of digital solutions. From elegant mobile apps to robust enterprise software, we blend cutting-edge tech with user-centric design.</p>
                             </div>
                             <div class="iconBox">
-                                <i class="bi bi-gem"></i>
-                                <h4><a href="" class="stretched-link">Ullamco laboris nisi</a></h4>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                                <h4><i class="iconImage"><DiCode /></i>Video Game Artistry</h4>
+                                <p>Pixels are our playground! Our game artists breathe life into characters, worlds, and epic quests.</p>
                             </div>
                             <div class="iconBox">
-                                <i class="bi bi-broadcast"></i>
-                                <h4><a href="" class="stretched-link">Labore consequatur</a></h4>
-                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                                <h4><i class="iconImage"><DiCoda /></i>Web Design Magic</h4>
+                                <p>The web is our canvas. Our designers blend aesthetics and functionality seamlessly.</p>
                             </div>
                             <div class="iconBox">
-                                <i class="bi bi-easel"></i>
-                                <h4><a href="" class="stretched-link">Beatae veritatis</a></h4>
-                                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                                <h4><i class="iconImage"><DiNpm /></i>Beat Maker</h4>
+                                <p>We design a sound that make a hop to a hit ♪♫.</p>
                             </div>
                         </div>
 
@@ -110,8 +114,9 @@ const Public = () => {
 
             </main>
             <footer>
-                Coppy right © 2024 at MIT license
+                    <span>©</span> Little Dream studio 2024 at <a href="#">MIT license</a>
             </footer>
+
         </section>
 
         

@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* || VARIABLES */
 
@@ -211,7 +214,8 @@ body.index-page {
   top: 0; /* Position it at the top */
   width: 100%; /* Full width */
   opacity: 0.9;
-
+  justify-content: space-between;
+  
   -webkit-box-shadow: 0 10px 6px -6px #777;
      -moz-box-shadow: 0 10px 6px -6px #777;
           box-shadow: 0 10px 6px -6px #777;
@@ -219,7 +223,7 @@ body.index-page {
 
 .headerNavibar {
   padding-left: 25%;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding-right:30px;
   padding-top:10px;
@@ -227,13 +231,14 @@ body.index-page {
 
 .headerNavibar ul {
   display: flex;
+
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .headerNavibar li {
-  margin: 0 10px;
+  margin-right: 20px;
 }
 
 .headerNavibar li a {
@@ -247,8 +252,10 @@ body.index-page {
 .headerNavi .loginButton {
   color: #000000;
   padding-top:10px;
+  margin-left:20px;
 }
 .logo {
+  margin-right:20px;
   max-width: 200px;
   max-height: 150px;
 }
@@ -258,38 +265,35 @@ body.index-page {
 }
 
 /* || Client Seassion */
-#clients {
+.clients {
   background-color: #f9f9f9; /* light background */
   padding: 60px 0; /* section padding */
 }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+.container_clients{
+  justify-content: center;
+  align-items: center;
 }
-
 
 .client-logo {
   display: inline-block;
   width: 12%; /* adjust this value to fit all images in the same row */
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 25px;
+  padding: 10px;
   transition: transform 0.3s ease-in-out;
+  background-color: transparent;
+  
   /* Medium screens (≥768px) */
 }
 
 .client-logo img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height:50px;
+  object-fit: fill;
   border-radius: 10px; /* optional */
 }
 .client-logo:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .client-logo:hover img {
@@ -309,6 +313,147 @@ body.index-page {
   }
 }
 /* || About Us */
+.containerAbout_tittle {
+  max-width: 1140px; /* Set a maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+}
+
+.containerAbout_tittle h2 {
+  font-size: 36px; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Dark gray text */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Add some margin below the heading */
+  padding: 10px; /* Add some padding around the heading */
+}
+
+.containerAbout_tittle h2::before {
+  content: ""; /* Add an empty content */
+  display: block; /* Make it a block element */
+  width: 100%; /* Make it full width */
+  height: 2px; /* Make it 2px high */
+  margin-bottom: 10px; /* Add some margin below the line */
+}
+
+.containerAbout_tittle h2::after {
+  content: ""; /* Add an empty content */
+  display: block; /* Make it a block element */
+  width: 100%; /* Make it full width */
+  height: 1px; /* Make it 1px high */
+  background-color: #ddd; /* Light gray background */
+  margin-top: 10px; /* Add some margin above the line */
+}
+
+.containerAbout {
+  display:flex;
+  max-width: 1200px; /* Set a maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+}
+.aboutContainer_text{
+  max-width: 500px; /* adjust the width to your liking */
+  margin: 40px auto; /* center the text horizontally */
+  padding: 20px;
+  background-color: #fff; /* white background */
+  font-family: 'Merriweather', serif; /* beautiful font family */
+}
+.aboutContainer_text h3{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Playfair Display', serif; /* elegant font family for headings */
+}
+
+.aboutContainer_text p {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+
+.aboutButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #337ab7; /* adjust the button color */
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; /* modern font family for buttons */
+}
+
+.aboutButton span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.aboutButton:hover {
+  /* Hover styles */
+  background-color: #23527c; /* adjust the hover color */
+  color: #fff; /* Keep the text white */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover */
+}
+
+.aboutButton:hover  {
+  /* Active styles */
+  background-color: #23527c; /* adjust the hover color */
+  transform: translateY(-2px);
+}
+
+.boxtitleAbout {
+  font-size: 18px; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+  color: #000000; /* Blue text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Add a transition effect */
+}
+
+.aboutContainer_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.iconBox {
+  flex-basis: 40%; /* adjust the width of each box */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.iconBox:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.iconImage {
+  font-size: 35px;
+  margin-right: 10px;
+  color: #337ab7; /* adjust the icon color */
+}
+
+.iconBox h4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.iconBox p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
 
 /* || About Us */
 
@@ -601,6 +746,31 @@ tr {
   display: flex;
   flex-flow: column nowrap;
   gap: 0.5em;
+}
+
+footer {
+  background-color: #333; /* Dark gray background */
+  color: #fff; /* White text color */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center the text */
+  font-size: 14px; /* Decrease font size */
+  font-weight: bold; /* Make the text bold */
+  border-top: 1px solid #444; /* Add a dark gray border above the footer */
+}
+
+footer span {
+  font-size: 16px; /* Increase font size for the copyright symbol */
+  vertical-align: middle; /* Vertically align the copyright symbol */
+}
+
+footer a {
+  color: #fff; /* White text color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Add a transition effect */
+}
+
+footer a:hover {
+  color: #ccc; /* Light gray text color on hover */
 }
 
 @media screen and (max-width: 400px) {
