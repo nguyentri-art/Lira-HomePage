@@ -209,7 +209,7 @@ body.index-page {
   background-color: #FFF;
   padding: 20px;
   text-align: center;
-  z-index: 1;
+  z-index: 10000;
   position: fixed; /* Make the navbar fixed */
   top: 0; /* Position it at the top */
   width: 100%; /* Full width */
@@ -265,9 +265,9 @@ body.index-page {
 }
 
 /* || Client Seassion */
-.clients {
-  background-color: #f9f9f9; /* light background */
-  padding: 60px 0; /* section padding */
+.clientSeasion {
+  background-color: #f9f9f9; 
+  padding: 60px 0;
 }
 
 .container_clients{
@@ -275,7 +275,7 @@ body.index-page {
   align-items: center;
 }
 
-.client-logo {
+.client-logo_SS {
   display: inline-block;
   width: 12%; /* adjust this value to fit all images in the same row */
   margin: 25px;
@@ -286,29 +286,29 @@ body.index-page {
   /* Medium screens (≥768px) */
 }
 
-.client-logo img {
+.client-logo_SS img {
   width: 100%;
   height:50px;
   object-fit: fill;
   border-radius: 10px; /* optional */
 }
-.client-logo:hover {
+.client-logo_SS:hover {
   transform: scale(1.1);
 }
 
-.client-logo:hover img {
+.client-logo_SS:hover img {
   opacity: 0.8;
 }
 /* media queries for responsive design */
 
 @media (max-width: 1199px) {
-  .client-logo {
+  .client-logo_SS {
     width: 25%; /* col-md-3 */
   }
 }
 
 @media (max-width: 767px) {
-  .client-logo {
+  .client-logo_SS {
     width: 50%; /* col-6 */
   }
 }
@@ -456,6 +456,39 @@ body.index-page {
 
 
 /* || About Us */
+
+/* || Stats Section */
+.stats-item .counter {
+  font-size: 24px; /* adjust font size to your liking */
+  font-weight: bold;
+}
+
+.stats-item .counter::before {
+  content: "0"; /* initial value */
+  display: inline-block;
+  transition: content 1s; /* duration: 1 second */
+}
+
+.stats-item .counter.animate::before {
+  content: "232"; /* final value */
+  transition: content 1s; /* duration: 1 second */
+}
+
+
+.stats-item .counter.animate1::before {
+  content: "8000"; /* final value */
+  transition: content 1s; /* duration: 1 second */
+}
+.stats-item .counter.animate2::before {
+  content: "400"; /* final value */
+  transition: content 1s; /* duration: 1 second */
+}
+.stats-item .counter.animate2::before {
+  content: "12"; /* final value */
+  transition: content 1s; /* duration: 1 second */
+}
+
+/* || Stats Section */
 
 
 /* || UTILITY CLASSES */
