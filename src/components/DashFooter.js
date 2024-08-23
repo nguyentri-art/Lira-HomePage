@@ -3,6 +3,14 @@ import { faHouse } from "@fortawesome/free-solid-svg-icons"
 import { useNavigate, useLocation } from 'react-router-dom'
 import useAuth from "../hooks/useAuth"
 
+import "../assets/vendor/bootstrap/css/bootstrap.min.css";
+import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
+import "../assets/vendor/glightbox/css/glightbox.min.css";
+import "../assets/vendor/swiper/swiper-bundle.min.css";
+
+import "../assets/css/main.css";
+
+
 const DashFooter = () => {
 
     const { username, status } = useAuth()

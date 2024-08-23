@@ -7,6 +7,13 @@ import usePersist from '../../hooks/usePersist'
 import useTitle from '../../hooks/useTitle'
 import PulseLoader from 'react-spinners/PulseLoader'
 
+import "./../../assets/vendor/bootstrap/css/bootstrap.min.css";
+import "./../../assets/vendor/bootstrap-icons/bootstrap-icons.css";
+import "./../../assets/vendor/glightbox/css/glightbox.min.css";
+import "./../../assets/vendor/swiper/swiper-bundle.min.css";
+
+import "./../../assets/css/main.css";
+
 const Login = () => {
     useTitle('Dream Login')
 
@@ -59,6 +66,8 @@ const Login = () => {
 
     const errClass = errMsg ? "errmsg" : "offscreen"
 
+    console.log("isLoading checking ============ Login", isLoading);
+    
     if (isLoading) return <PulseLoader color={"#FFF"} />
 
     const content = (

@@ -579,10 +579,6 @@ a:focus-visible {
   flex-grow: 1;
 }
 
-.public__main,
-.login {
-  padding-top: 10%;
-}
 
 
 .welcome a::before {

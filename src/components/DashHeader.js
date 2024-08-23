@@ -11,6 +11,13 @@ import { useNavigate, Link, useLocation } from 'react-router-dom'
 import { useSendLogoutMutation } from '../features/auth/authApiSlice'
 import useAuth from '../hooks/useAuth'
 import PulseLoader from 'react-spinners/PulseLoader'
+import "../assets/vendor/bootstrap/css/bootstrap.min.css";
+import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
+import "../assets/vendor/glightbox/css/glightbox.min.css";
+import "../assets/vendor/swiper/swiper-bundle.min.css";
+
+import "../assets/css/main.css";
+
 
 const DASH_REGEX = /^\/dash(\/)?$/
 const NOTES_REGEX = /^\/dash\/notes(\/)?$/
