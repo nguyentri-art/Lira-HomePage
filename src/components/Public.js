@@ -59,7 +59,6 @@ const Public = () => {
             <img src="../img/logo1.jpg" alt="a Little Dream" className="logo" />
                 <nav className='headerNavibar'>
                     <ul>
-                        <li><a href="#hero" class="active">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
@@ -67,7 +66,7 @@ const Public = () => {
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <Link className='loginButton' to="/login">Dreammer Login</Link>
+                <Link className='loginButton' to="/login">Login</Link>
             </header>
             <main className="public__main">
             <section id="hero" class="hero section">
@@ -331,90 +330,90 @@ const Public = () => {
             <section id="features" class="features section">
                 <div class="container section-title" data-aos="fade-up">
                     <h2>Features</h2>
-                    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                    <p>We connect every area of ​​life </p>
                  </div>
                  <div class="container">
                     <div class="row gy-4">
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
                             <div class="features-item">
                             <i class="bi bi-eye eye-icon"></i>
-                            <h3><a href="" class="stretched-link">Lorem Ipsum</a></h3>
+                            <h3><a href="" class="stretched-link">Watching</a></h3>
                             </div>
                         </div>
                             <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
                             <div class="features-item">
                             <i class="bi bi-infinity"></i>
-                            <h3><a href="" class="stretched-link">Dolor Sitema</a></h3>
+                            <h3><a href="" class="stretched-link">Academic exchange</a></h3>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
                             <div class="features-item">
                             <i class="bi bi-mortarboard"></i>
-                            <h3><a href="" class="stretched-link">Sed perspiciatis</a></h3>
+                            <h3><a href="" class="stretched-link">Study and research</a></h3>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
                             <div class="features-item">
                             <i class="bi bi-nut" ></i>
-                            <h3><a href="" class="stretched-link">Magni Dolores</a></h3>
+                            <h3><a href="" class="stretched-link">Mechanical engineering</a></h3>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
                             <div class="features-item">
                             <i class="bi bi-shuffle" ></i>
-                            <h3><a href="" class="stretched-link">Nemo Enim</a></h3>
+                            <h3><a href="" class="stretched-link">Multithreading support</a></h3>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
                             <div class="features-item">
                             <i class="bi bi-star" ></i>
-                            <h3><a href="" class="stretched-link">Eiusmod Tempor</a></h3>
+                            <h3><a href="" class="stretched-link">Share achievements</a></h3>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
                             <div class="features-item">
                             <i class="bi bi-x-diamond" ></i>
-                            <h3><a href="" class="stretched-link">Midela Teren</a></h3>
+                            <h3><a href="" class="stretched-link">Multi-platform, multi-technology</a></h3>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
                             <div class="features-item">
                             <i class="bi bi-camera-video" ></i>
-                            <h3><a href="" class="stretched-link">Pira Neve</a></h3>
+                            <h3><a href="" class="stretched-link">Film and art</a></h3>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
                             <div class="features-item">
                             <i class="bi bi-command" ></i>
-                            <h3><a href="" class="stretched-link">Dirada Pack</a></h3>
+                            <h3><a href="" class="stretched-link">Mind game</a></h3>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1000">
                             <div class="features-item">
                             <i class="bi bi-dribbble" ></i>
-                            <h3><a href="" class="stretched-link">Moton Ideal</a></h3>
+                            <h3><a href="" class="stretched-link">eSports</a></h3>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1100">
                             <div class="features-item">
                             <i class="bi bi-activity" ></i>
-                            <h3><a href="" class="stretched-link">Verdo Park</a></h3>
+                            <h3><a href="" class="stretched-link">Medical</a></h3>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1200">
                             <div class="features-item">
                             <i class="bi bi-brightness-high" ></i>
-                            <h3><a href="" class="stretched-link">Flavor Nivelanda</a></h3>
+                            <h3><a href="" class="stretched-link">Experiential Activities</a></h3>
                             </div>
                         </div>
                         </div>
@@ -432,93 +431,93 @@ const Public = () => {
                     <div className="swiper init-swiper">
                             <div className="swiper-wrapper">
                                 <div className="swiper-slide">
-                                <div className="testimonial-wrap">
-                                    <div className="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
-                                    <h3>Saul Goodman</h3>
-                                    <h4>Ceo &amp; Founder</h4>
-                                    <div className="stars">
-                                        <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
+                                    <div className="testimonial-wrap">
+                                        <div className="testimonial-item">
+                                        <img src="assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
+                                        <h3>Saul Goodman</h3>
+                                        <h4>Ceo &amp; Founder</h4>
+                                        <div className="stars">
+                                            <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>
+                                            <i className="bi bi-quote quote-icon-left"></i>
+                                            <span>Little Dream Studio turned our vision into a functional web app! Their team’s expertise in front-end and back-end development is unmatched. The user-friendly interface they designed exceeded our expectations.</span>
+                                            <i className="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        </div>
                                     </div>
-                                    <p>
-                                        <i className="bi bi-quote quote-icon-left"></i>
-                                        <span>Little Dream Studio turned our vision into a functional web app! Their team’s expertise in front-end and back-end development is unmatched. The user-friendly interface they designed exceeded our expectations.</span>
-                                        <i className="bi bi-quote quote-icon-right"></i>
-                                    </p>
-                                    </div>
-                                </div>
                                 </div>
 
                                 <div class="swiper-slide">
-                                <div class="testimonial-wrap">
-                                    <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""/>
-                                    <h3>Sara Wilsson</h3>
-                                    <h4>Designer</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <div class="testimonial-wrap">
+                                        <div class="testimonial-item">
+                                        <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""/>
+                                        <h3>Sara Wilsson</h3>
+                                        <h4>Designer</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i>
+                                            <span>As an artist, I collaborated with Little Dream Studio on a project. Their art design team brought my concepts to life with stunning visuals. Their attention to detail and creativity truly impressed me.</span>
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        </div>
                                     </div>
-                                    <p>
-                                        <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>As an artist, I collaborated with Little Dream Studio on a project. Their art design team brought my concepts to life with stunning visuals. Their attention to detail and creativity truly impressed me.</span>
-                                        <i class="bi bi-quote quote-icon-right"></i>
-                                    </p>
-                                    </div>
-                                </div>
                                 </div>
 
                                 <div class="swiper-slide">
-                                <div class="testimonial-wrap">
-                                    <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""/>
-                                    <h3>Jena Karlis</h3>
-                                    <h4>Store Owner</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <div class="testimonial-wrap">
+                                        <div class="testimonial-item">
+                                        <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""/>
+                                        <h3>Jena Karlis</h3>
+                                        <h4>Store Owner</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i>
+                                            <span>Imagine generating $45,000 in sales within just 30 days! This achievement demonstrates the fully feasible potential of wholesale for store owners.</span>
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        </div>
                                     </div>
-                                    <p>
-                                        <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Imagine generating $45,000 in sales within just 30 days! This achievement demonstrates the fully feasible potential of wholesale for store owners.</span>
-                                        <i class="bi bi-quote quote-icon-right"></i>
-                                    </p>
-                                    </div>
-                                </div>
                                 </div>
 
                                 <div class="swiper-slide">
-                                <div class="testimonial-wrap">
-                                    <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt=""/>
-                                    <h3>Matt Brandon</h3>
-                                    <h4>Freelancer</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <div class="testimonial-wrap">
+                                        <div class="testimonial-item">
+                                        <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt=""/>
+                                        <h3>Matt Brandon</h3>
+                                        <h4>Freelancer</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i>
+                                            <span>Little Dream Studio’s music production services are top-notch! They helped me compose and produce my album. Their sound engineers and composers are passionate about music, and it shows in the final product.</span>
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        </div>
                                     </div>
-                                    <p>
-                                        <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Little Dream Studio’s music production services are top-notch! They helped me compose and produce my album. Their sound engineers and composers are passionate about music, and it shows in the final product.</span>
-                                        <i class="bi bi-quote quote-icon-right"></i>
-                                    </p>
-                                    </div>
-                                </div>
                                 </div>
 
                                 <div class="swiper-slide">
-                                <div class="testimonial-wrap">
-                                    <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""/>
-                                    <h3>John Larson</h3>
-                                    <h4>Game Developer</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <div class="testimonial-wrap">
+                                        <div class="testimonial-item">
+                                        <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""/>
+                                        <h3>John Larson</h3>
+                                        <h4>Game Developer</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i>
+                                            <span>Little Dream Studio transformed our game idea into reality. Their game design expertise, from character sprites to level design, elevated our project. They’re a reliable partner for any game development venture.</span>
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        </div>
                                     </div>
-                                    <p>
-                                        <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Little Dream Studio transformed our game idea into reality. Their game design expertise, from character sprites to level design, elevated our project. They’re a reliable partner for any game development venture.</span>
-                                        <i class="bi bi-quote quote-icon-right"></i>
-                                    </p>
-                                    </div>
-                                </div>
                                 </div>
 
                             </div>

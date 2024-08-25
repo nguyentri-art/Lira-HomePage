@@ -5,6 +5,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+import AOS from 'aos';
+import GLightbox from 'glightbox';
+import PureCounter from 'purecounter';
+import Swiper from 'swiper';
+import imagesLoaded from 'imagesloaded';
+import Isotope from 'isotope-layout';
 
 (function() {
   "use strict";

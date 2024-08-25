@@ -231,7 +231,6 @@ body.index-page {
 
 .headerNavibar ul {
   display: flex;
-
   list-style: none;
   margin: 0;
   padding: 0;
@@ -252,7 +251,7 @@ body.index-page {
 .headerNavi .loginButton {
   color: #000000;
   padding-top:10px;
-  margin-left:20px;
+  margin-left:-50px;
 }
 .logo {
   margin-right:20px;
@@ -263,6 +262,8 @@ body.index-page {
   color:rgb(0, 68, 255);
   text-shadow: #0F172A;
 }
+
+
 
 /* || Client Seassion */
 .clientSeasion {
@@ -309,8 +310,53 @@ body.index-page {
 
 @media (max-width: 767px) {
   .client-logo_SS {
-    width: 50%; /* col-6 */
+    width: 30%; /* col-6 */
+    margin-right: 50px;
   }
+  .headerNavibar {
+    padding-left: 25%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:30px;
+    padding-top:10px;
+  }
+
+  .headerNavibar ul {
+    display: flex;
+    list-style: none;
+    margin-left: -100px;
+  }
+
+  .headerNavibar li {
+    margin-right: 10px;
+  }
+
+  .headerNavibar li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: x-small;
+  }
+  .headerNavibar a:hover{
+    color:rgb(0, 68, 255);
+  }
+
+  .headerNavi .loginButton {
+    color: #000000;
+    padding-top:17.5px;
+    font-size: x-small;
+    padding-left:20px;
+  }
+  .logo {
+    margin-right:20px;
+    max-width: 120px;
+    max-height: 50px;
+  }
+
+  .loginButton:hover{
+    color:rgb(0, 68, 255);
+    text-shadow: #0F172A;
+  }
+
 }
 /* || About Us */
 .containerAbout_tittle {
@@ -453,7 +499,47 @@ body.index-page {
   color: #666;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 767px) {
+  .containerAbout_tittle {
+    max-width: 50%; /* Adjust the maximum width */
+    padding: 10px; /* Reduce padding */
+  }
 
+  .containerAbout_tittle h2 {
+    font-size: 24px; /* Reduce font size */
+  }
+
+  .aboutContainer_text {
+    max-width: 50%; /* Adjust the maximum width */
+    margin: 20px auto; /* Reduce margin */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .aboutContainer_text h3 {
+    font-size: 32px; /* Reduce font size */
+  }
+  .aboutContainer_text p {
+    font-size:24px;
+  }
+  .aboutButton {
+    padding: 5px 10px; /* Reduce padding */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .iconBox {
+    flex-basis: 80%; /* Adjust the width of each box */
+    margin: 10px; /* Reduce margin */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .iconImage {
+    font-size: 24px; /* Reduce font size */
+  }
+
+  .iconBox h4 {
+    font-size: 16px; /* Reduce font size */
+  }
+}
 
 /* || About Us */
 

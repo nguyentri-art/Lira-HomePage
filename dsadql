@@ -1,0 +1,71 @@
+[33mcommit 596f692b914698eff25f5d3eba3e2beda61ee4f7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfrontend[m[33m, [m[1;31morigin/frontend[m[33m)[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Fri Aug 23 18:31:48 2024 +0700
+
+    text fix login form
+
+[33mcommit 73183bdc155193aea25a047573b181694dcb5210[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Thu Aug 22 09:27:12 2024 +0700
+
+    fix tag navbar
+
+[33mcommit e51ac9d7cee597704b12d8908b7ec762103c8222[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Thu Aug 22 09:13:43 2024 +0700
+
+    complete home page interface || testing form email
+
+[33mcommit bb102fd4ee32463872ca3f67120861b5018c5fe1[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Wed Aug 21 08:58:09 2024 +0700
+
+    fix UI About US || Ready to add more
+
+[33mcommit 9ea8ba4ff69f3afc38bb63368765c7d215e2e910[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Wed Aug 21 06:09:56 2024 +0700
+
+    fix UI- navibar-
+
+[33mcommit fdbb5930cd80e1df55cae8202b8a4df835761451[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Wed Aug 21 01:17:36 2024 +0700
+
+    change UI -about section
+
+[33mcommit ec4d8a80f162476366430822c21f7d44b42ed8a9[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Tue Jul 30 19:58:40 2024 +0700
+
+    fix auth
+
+[33mcommit 80a7cd5f804f37cc448e26c269795033cc8f1d39[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Tue Jul 30 19:44:54 2024 +0700
+
+    errMsg change
+
+[33mcommit 8dc91d17bb5a15644127dcf860942b6fb563ab0c[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Tue Jul 30 17:55:01 2024 +0700
+
+    change fetch API base
+
+[33mcommit 141c8a7cacc1fb3cffca28ad321c1e9a353195e2[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Tue Jul 30 15:57:57 2024 +0700
+
+    useTitle
+
+[33mcommit 806afe0d0eda20c1daf93485302bf9c8fb2f33e6[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Tue Jul 30 15:51:02 2024 +0700
+
+    change Info
+
+[33mcommit 1cf25413018f0c77b658319bb24872ccd281d815[m
+Author: nguyentri-art <ngtri1410@gmail.com>
+Date:   Tue Jul 30 15:31:11 2024 +0700
+
+    task01
