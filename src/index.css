@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -863,14 +863,235 @@ tr {
   gap: 0.5em;
 }
 
+/* portfolio */
+.portfolioCard {  
+  position: relative;
+  width: 100%;
+  height: auto;
+  background:  linear-gradient(to bottom, #ffffff, #3287ff);
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+}
+.portfolioCard h1 {
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 5rem;
+  position: absolute;
+  text-shadow: -15px 5px 20px #ced0d3;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650, 
+    10px 10px 0px #FFD662, 
+    15px 15px 0px  #FF80BF, 
+    20px 20px 0px #EF5097, 
+    25px 25px 0px #6868AC, 
+    30px 30px 0px #90B1E0;
+}
+
+.portfolio_card {
+  margin-top: 10%;
+  margin-left:5%;
+  max-width:400px;
+  max-height: 500px;
+  opacity: 1;
+  border-radius: 20px;
+  display: flex; /* add this to center the content horizontally and vertically */
+  justify-content: center; /* add this to center the content horizontally */
+  align-items: center; /* add this to center the content vertically */
+}
+.portfolio_card:hover {
+
+}
+
+.portfolio_detail{
+  width: 400px;
+  height: 500px;
+  margin:0;
+  padding:0;
+  background-image:url("https://private-user-images.githubusercontent.com/33679148/324340285-48c8f581-2a43-47c0-96e2-01b86c68ec7b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQ5MTkxMjQsIm5iZiI6MTcyNDkxODgyNCwicGF0aCI6Ii8zMzY3OTE0OC8zMjQzNDAyODUtNDhjOGY1ODEtMmE0My00N2MwLTk2ZTItMDFiODZjNjhlYzdiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODI5VDA4MDcwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA2NDZmZGE2ZTdhZDBmZjMzNDQ5ZTJjMDc3MTMzMmNiYmRiYTFjYTNmM2Y5MmExMDRlMDNlOTM4ZmM4YmIyOGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ENMpiBHDNIGzaQxHQl92BLdX6ixMFQO1a4nZlJXGooQ");
+  background-size: cover;
+  background-position: center;
+  border-radius:20px;
+} 
+
+.portfolio_detail h2 {
+  left:100%;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 750;
+  color: rgb(48, 120, 228);
+  text-shadow: 5px 5px 0px #FFB650, 
+  10px 10px 0px #FFD662, 
+  15px 15px 0px  #FF80BF, 
+  20px 20px 0px #EF5097, 
+  25px 25px 0px #6868AC, 
+  30px 30px 0px #90B1E0;
+  transition: transform 0.5s, letter-spacing 0.5s,text-shadow 0.5s,padding-bottom 0.5s;
+}
+
+.portfolio_detail h2:hover{
+  letter-spacing: 5px;
+  padding-bottom: 5%;
+  font-size: 50px;
+  color: rgb(68, 0, 255);
+  text-shadow: 5px 5px 0px #418dff, 
+  10px 10px 0px #19fff4, 
+  15px 15px 0px  #27ff56, 
+  20px 20px 0px #4dff29, 
+  25px 25px 0px #95ff1b, 
+  30px 30px 0px #ddff1b;
+  transform: scale(1.1); /* add this to scale the element on hover */
+}
+
+
+.portfolio_detail1{
+  width: 400px;
+  height: 500px;
+  margin:0;
+  padding:0;
+  background-image: url("https://github.com/OpenBeta/open-tacos/blob/develop/openbeta-v0.7-screenshot.png?raw=true");
+  background-size: cover;
+  background-position: center;
+  border-radius:20px;
+} 
+
+.portfolio_detail1 h2{
+  text-align: center;
+  font-size: 45px;
+  font-weight: 750;
+  color: rgb(48, 120, 228);
+  text-shadow: 5px 5px 0px #FFB650, 
+  10px 10px 0px #FFD662, 
+  15px 15px 0px  #FF80BF, 
+  20px 20px 0px #EF5097, 
+  25px 25px 0px #6868AC, 
+  30px 30px 0px #90B1E0;
+  transition: transform 0.5s, letter-spacing 0.5s,text-shadow 0.5s,padding-bottom 0.5s;
+}
+
+.portfolio_detail1 h2:hover{
+  letter-spacing: 5px;
+  padding-bottom: 5%;
+  font-size: 50px;
+  color: rgb(68, 0, 255);
+  text-shadow: 5px 5px 0px #418dff, 
+  10px 10px 0px #19fff4, 
+  15px 15px 0px  #27ff56, 
+  20px 20px 0px #4dff29, 
+  25px 25px 0px #95ff1b, 
+  30px 30px 0px #ddff1b;
+  transform: scale(1.1); /* add this to scale the element on hover */
+}
+
+.portfolio_detail2 {
+  width: 400px;
+  height: 500px;
+  margin:0;
+  padding:0;
+  background-image: url("https://th.bing.com/th/id/R.0c6777dbdc6d31611a5de16624aead48?rik=4Wy%2bx1KIeUtqRA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fdIGVbnY.jpg&ehk=WgCmWcB2%2babQbiS%2bbokaECIelLwVfv92cC61tUOQkTY%3d&risl=&pid=ImgRaw&r=0");
+  background-size: 100% 100%;
+  background-position: center;
+  border-radius:20px;
+} 
+
+.portfolio_detail2 h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 750;
+  color: rgb(48, 120, 228);
+  text-shadow: 5px 5px 0px #FFB650, 
+  10px 10px 0px #FFD662, 
+  15px 15px 0px  #FF80BF, 
+  20px 20px 0px #EF5097, 
+  25px 25px 0px #6868AC, 
+  30px 30px 0px #90B1E0;
+  transition: transform 1s, letter-spacing 1s,text-shadow 1s,padding-bottom 1s;
+}
+
+.portfolio_detail2 h2:hover{
+  letter-spacing: 5px;
+  padding-bottom: 5%;
+  font-size: 50px;
+  color: rgb(68, 0, 255);
+  text-shadow: 5px 5px 0px #418dff, 
+  10px 10px 0px #19fff4, 
+  15px 15px 0px  #27ff56, 
+  20px 20px 0px #4dff29, 
+  25px 25px 0px #95ff1b, 
+  30px 30px 0px #ddff1b;
+  transform: scale(1.1); /* add this to scale the element on hover */
+}
+
+
+.air{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px
+}
+.air.air1{
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+.air.air2{
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+.air.air3{
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+.air.air4{
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+@keyframes wave{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 1000px; 
+  }
+}
+@keyframes wave2{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: -1000px; 
+  }
+}
+
 footer {
+  bottom: 100%;
   background-color: #333; /* Dark gray background */
   color: #fff; /* White text color */
   padding: 20px; /* Add some padding */
   text-align: center; /* Center the text */
   font-size: 14px; /* Decrease font size */
   font-weight: bold; /* Make the text bold */
-  border-top: 1px solid #444; /* Add a dark gray border above the footer */
+  border-top: 0px solid #444; /* Add a dark gray border above the footer */
 }
 
 footer span {

@@ -59,9 +59,9 @@ const Public = () => {
             <img src="../img/logo1.jpg" alt="a Little Dream" className="logo" />
                 <nav className='headerNavibar'>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -982,7 +982,7 @@ const Public = () => {
 
             </main>
             <footer>
-                    <span>©</span> Little Dream studio 2024 at <a href="#">MIT license</a>
+                    <span>©</span> Little Dream studio 2024 at <a href="#">BSL license</a>
             </footer>
 
         </section>
