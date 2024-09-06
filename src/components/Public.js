@@ -56,14 +56,14 @@ const Public = () => {
     const content = (
         <section className="public">
             <header className='headerNavi'>
-            <img src="../img/logo1.jpg" alt="a Little Dream" className="logo" />
+            <a href="/"><img src="../img/logo1.jpg" alt="a Little Dream" className="logo" /></a>
                 <nav className='headerNavibar'>
                     <ul>
                         <li><a href="/">About</a></li>
                         <li><a href="/#services">Services</a></li>
                         <li><a href="/portfolio">Portfolio</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <Link className='loginButton' to="/login">Login</Link>

@@ -16,6 +16,7 @@ import RequireAuth from './features/auth/RequireAuth'
 import { ROLES } from './config/roles'
 import useTitle from './hooks/useTitle';
 import Portfolio from './components/Portfolio';
+import News from './components/News';
 
 function App() {
   useTitle('A Little Dream - Where your dream come true')
@@ -27,6 +28,7 @@ function App() {
         <Route index element={<Public />} />
         <Route path="login" element={<Login />} />
         <Route path="portfolio" element={<Portfolio />}  />
+        <Route path="news" element={<News />} />
 
         {/* Protected Routes */}
         <Route element={<PersistLogin />}>

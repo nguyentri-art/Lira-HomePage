@@ -904,16 +904,13 @@ tr {
   justify-content: center; /* add this to center the content horizontally */
   align-items: center; /* add this to center the content vertically */
 }
-.portfolio_card:hover {
-
-}
 
 .portfolio_detail{
   width: 400px;
   height: 500px;
   margin:0;
   padding:0;
-  background-image:url("https://private-user-images.githubusercontent.com/33679148/324340285-48c8f581-2a43-47c0-96e2-01b86c68ec7b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQ5MTkxMjQsIm5iZiI6MTcyNDkxODgyNCwicGF0aCI6Ii8zMzY3OTE0OC8zMjQzNDAyODUtNDhjOGY1ODEtMmE0My00N2MwLTk2ZTItMDFiODZjNjhlYzdiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODI5VDA4MDcwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA2NDZmZGE2ZTdhZDBmZjMzNDQ5ZTJjMDc3MTMzMmNiYmRiYTFjYTNmM2Y5MmExMDRlMDNlOTM4ZmM4YmIyOGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ENMpiBHDNIGzaQxHQl92BLdX6ixMFQO1a4nZlJXGooQ");
+  background-image:url("../src/assets/img/portfolio/Lira-Ima.png");
   background-size: cover;
   background-position: center;
   border-radius:20px;
@@ -1082,6 +1079,178 @@ tr {
     background-position-x: -1000px; 
   }
 }
+
+/* News */
+.newsContainer {
+  display:grid;
+  grid-template-columns: 60% 35%;
+  gap:5%;
+  margin: 5%;
+}
+
+.newsMain {
+  grid-column:1;
+  justify-self:center;
+}
+
+.newsSide {
+  grid-column:2;
+  justify-self: end;
+}
+
+.newsMain_box {
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  background: transparent;
+  width: 800px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.newsSide_box {
+  background: transparent;
+  margin:10px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.newsMain_box img{
+  width: 30%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+.newsSide_box img {
+  width:100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; 
+}
+.newsMain_box .newsContent , .newsSide_box .newsContent{
+  flex: 1;
+  padding: 20px;
+}
+.newsMain_box .newsContent h3 , .newsSide_box .newsContent h3{
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.newsMain_box .newsContent p , .newsSide_box .newsContent p{
+  font-size: 16px;
+  color: #666;
+}
+/* News */
+
+
+/* Mobile devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .portfolioCard {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolioCard h1 {
+    font-size: 1rem;
+    margin-top: 50%;
+  }
+  .portfolio_card {
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+  }
+  .portfolio_detail .portfolio_detail1 .portfolio_detail2 {
+    width: 30%;
+    height: 30%;
+  }
+  .portfolio_detail h2{
+    font-size: 1rem;
+  }
+  .portfolio_detail1 h2{
+    font-size: 1rem;
+  }
+  .portfolio_detail2 h2{
+    font-size: 1rem;
+  }
+  .air {
+    height: 50px;
+    background-size: 100% 100%;
+  }
+}
+
+/* Tablet devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .portfolioCard {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolioCard h1 {
+    font-size: 4rem;
+    margin-top: 20%;
+  }
+  .portfolio_card {
+    max-width: 400px;
+    max-height: 500px;
+    padding-top: 40%;
+  }
+  .portfolio_detail {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+  }
+  .portfolio_detail1 {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+  }
+  .portfolio_detail2 {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+  }
+  .air {
+    height: 75px;
+    background-size: 100% 100%;
+  }
+}
+
+/* Large devices (max-width: 1080px) */
+@media only screen and (max-width: 1080px) {
+  .portfolioCard {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolioCard h1 {
+    font-size: 5rem;
+    margin-top: 10%;
+  }
+  .portfolio_card {
+    max-width: 400px;
+    max-height: 500px;
+    padding-top: 30%;
+  }
+  .portfolio_detail {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+  .portfolio_detail1 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+  .portfolio_detail2 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+  .air {
+    height: 75px;
+    background-size: 100% 100%;
+  }
+} 
+
 
 footer {
   bottom: 100%;
