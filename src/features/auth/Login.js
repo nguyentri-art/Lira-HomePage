@@ -7,12 +7,7 @@ import usePersist from '../../hooks/usePersist'
 import useTitle from '../../hooks/useTitle'
 import PulseLoader from 'react-spinners/PulseLoader'
 
-import "./../../assets/vendor/bootstrap/css/bootstrap.min.css";
-import "./../../assets/vendor/bootstrap-icons/bootstrap-icons.css";
-import "./../../assets/vendor/glightbox/css/glightbox.min.css";
-import "./../../assets/vendor/swiper/swiper-bundle.min.css";
-
-import "./../../assets/css/main.css";
+import './Login.css';
 
 const Login = () => {
     useTitle('Dream Login')
@@ -66,22 +61,23 @@ const Login = () => {
 
     const errClass = errMsg ? "errmsg" : "offscreen"
 
-    console.log("isLoading checking ============ Login", isLoading);
-    
-    if (isLoading) return <PulseLoader color={"#FFF"} />
+    console.log(isLoading + " isLoading");
+    if (isLoading) return <div className='loader-container'>
+        <div className="loader"></div>
+        <h2 className="loader-text">Loading</h2>
+    </div>
 
-    const content = (
-        <section className="public">
-            <header>
-                <h1>Dream Login</h1>
-            </header>
-            <main className="login">
-                <p ref={errRef} className={errClass} aria-live="assertive">{errMsg}</p>
 
-                <form className="form" onSubmit={handleSubmit}>
-                    <label htmlFor="username">Username:</label>
+const content = (
+    <section className="login-container">
+        <div className="login-box">
+            <h1 className="login-title">Dream Login</h1>
+            {errMsg && <p ref={errRef} className={`login-error ${errClass}`} aria-live="assertive">{errMsg}</p>}
+
+            <form className="login-form" onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <label htmlFor="username">Username</label>
                     <input
-                        className="form__input"
                         type="text"
                         id="username"
                         ref={userRef}
@@ -90,37 +86,39 @@ const Login = () => {
                         autoComplete="off"
                         required
                     />
+                </div>
 
-                    <label htmlFor="password">Password:</label>
+                <div className="form-group">
+                    <label htmlFor="password">Password</label>
                     <input
-                        className="form__input"
                         type="password"
                         id="password"
                         onChange={handlePwdInput}
                         value={password}
                         required
                     />
-                    <button className="form__submit-button">Sign In</button>
+                </div>
 
+                <button type="submit" className="login-button">Sign In</button>
 
-                    <label htmlFor="persist" className="form__persist">
+                <div className="form-group checkbox-group">
+                    <label className="custom-checkbox">
                         <input
                             type="checkbox"
-                            className="form__checkbox"
                             id="persist"
                             onChange={handleToggle}
                             checked={persist}
                         />
-                        Trust This Device
+                        <span className="checkmark"></span>
+                        <span className="checkbox-label">Trust This Device</span>
                     </label>
-                </form>
-            </main>
-            <footer>
-                <Link to="/">Back to Home</Link>
-            </footer>
-        </section>
-    )
+                </div>
+            </form>
+            <Link to="/" className="back-link">Back to Home</Link>
+        </div>
+    </section>
+)
 
-    return content
+return content
 }
 export default Login
