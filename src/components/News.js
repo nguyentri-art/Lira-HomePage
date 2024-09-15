@@ -1,7 +1,54 @@
-import { Link } from 'react-router-dom';
-import React from 'react';
+import { Link ,useLocation, useNavigate} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons"
+import { memo,useState, } from 'react'
+import { useGetMagazinesQuery } from "../features/Magazine/magazineApiSlice"
+
+import React, { useEffect } from 'react';
+
+const truncateContent = (content, maxLength) => {
+    if (content.length <= maxLength) return content;
+    return content.slice(0, maxLength) + '...';
+};
 
 const News = () => {
+
+    const location = useLocation();
+    const isProtectedRoute = location.pathname.startsWith('/dash');
+
+    const { 
+         data: newsItems,
+        isLoading, 
+        isError, 
+        error
+    } = useGetMagazinesQuery();
+
+    useEffect(() => {
+        console.log('Query state changed:', { 
+            isLoading, 
+            isError, 
+            error, 
+            newsItems
+        });
+    }, [isLoading, isError, error, newsItems]);
+
+
+    const renderNewsItems = () => {
+        if (isLoading) return <p>Loading...</p>;
+        if (isError) return <p>Error loading news items: {error?.message || 'Unknown error'}</p>;
+        if (!newsItems || newsItems.length === 0) return <p>No news items available</p>;
+
+        return newsItems.map((item, index) => (
+            <div className='newsMain_box' key={item._id || index}>
+                <img src={item.imageContent} />
+                <div className='newsContent'>
+                    <h3>{item.title}</h3>
+                    <p>{truncateContent(item.content, 100)}</p>
+                </div>
+            </div>
+        ));
+    }
+
     const content = (
         <section className='public'>
             <header className='headerNavi'>
@@ -22,34 +69,10 @@ const News = () => {
                     <h1>We share culture and knowledge.</h1>
                     <div className="newsMain">
                         <h2>News.</h2>
-                        <div className='newsMain_box'>
-                            <img src="https://th.bing.com/th/id/OIP.u1uliLALTTzaR7NJFhrxIwHaLH?&rs=1&pid=ImgDetMain" />
-                            <div className='newsContent'>
-                                <h3>Movie the matrix is comback</h3>
-                                <p>description</p>
-                            </div>
-                        </div>
-                        <div className='newsMain_box'>
-                            <img src="https://th.bing.com/th/id/OIP.wzCL-0j9K7Xasx-HXbnH1wHaEU?rs=1&pid=ImgDetMain" />
-                            <div className='newsContent'>
-                                <h3>Ukraine is win all the battle</h3>
-                                <p>It’s game time, Spice Lords! To celebrate the kickoff of the NFL season, Sean Evans and the Hot Ones crew...</p>
-                            </div>
-                        </div>
-                        <div className='newsMain_box'>
-                            <img src="https://s.yimg.com/ny/api/res/1.2/t2SBUSd7aapKVR585rjMvA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04Mjc7Y2Y9d2VicA--/https://media.zenfs.com/en/reuters.com/041a02dd1e92cd59985f6ce651e93200" />
-                            <div className='newsContent'>
-                                <h3>Poland to charge three Belarusians for diverting Ryanair flight in 2021</h3>
-                                <p>WARSAW (Reuters) - Polish prosecutors have enough evidence to charge three Belarusian citizens over the forced landing in Minsk in 2021 of a civilian airliner carrying an opposition journalist, who was then arrested, Polish authorities said on Friday</p>
-                            </div>
-                        </div>
-                        <div className='newsMain_box'>
-                            <img src="https://1734811051.rsc.cdn77.org/data/images/full/450696/vihar-garlapati.jpg" />
-                            <div className='newsContent'>
-                                <h3>Generative AI Risks: Vulnerabilities in AI Models, Data Privacy, and Corporate IP Exposure</h3>
-                                <p>Can machines think? When the great British mathematician and computing pioneer Alan Turing first asked this question in his now-famous 1950 paper, the idea that inanimate computers could think like humans met only skepticism.</p>
-                            </div>
-                        </div>
+                        {renderNewsItems()}
+                        {isProtectedRoute && (
+                            <Link to="/dash/news/new" className="addNewButton">Add New Magazine</Link>
+                        )}
                     </div>
                     <div className="newsSide">
                         <h2>Random Dreamer</h2>

@@ -104,7 +104,6 @@ const NewNoteForm = ({ users }) => {
                 >
                     {options}
                 </select>
-
             </form>
         </>
     )

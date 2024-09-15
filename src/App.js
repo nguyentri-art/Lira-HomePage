@@ -17,6 +17,7 @@ import { ROLES } from './config/roles'
 import useTitle from './hooks/useTitle';
 import Portfolio from './components/Portfolio';
 import News from './components/News';
+import NewMagazine from './features/Magazine/NewMagazine';
 
 function App() {
   useTitle('A Little Dream - Where your dream come true')
@@ -29,6 +30,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="portfolio" element={<Portfolio />}  />
         <Route path="news" element={<News />} />
+
 
         {/* Protected Routes */}
         <Route element={<PersistLogin />}>
@@ -50,6 +52,11 @@ function App() {
                   <Route index element={<NotesList />} />
                   <Route path=":id" element={<EditNote />} />
                   <Route path="new" element={<NewNote />} />
+                </Route>
+
+                <Route path="news">
+                  <Route index element={<News />} />
+                  <Route path="new" element={<NewMagazine />} />
                 </Route>
 
               </Route>{/* End Dash */}

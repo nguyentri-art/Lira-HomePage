@@ -21,10 +21,11 @@ const Welcome = () => {
             <div className="welcome__actions">
                 <Link to="/dash/notes" className="welcome__link">View techNotes</Link>
                 <Link to="/dash/notes/new" className="welcome__link">Add New techNote</Link>
+                <Link to="/dash/news/new" className="welcome__link">Add New Magazine</Link>
                 {(isManager || isAdmin) && (
                     <>
                         <Link to="/dash/users" className="welcome__link">View User Settings</Link>
-                        <Link to="/dash/users/new" className="welcome__link">Add New User</Link>
+                        <Link to="/dash/news/new" className="welcome__link">Add New User</Link>
                     </>
                 )}
             </div>
