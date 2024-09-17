@@ -18,6 +18,7 @@ const NewMagazineForm = ({ users }) => {
     const [title, setTitle] = useState('')
     const [content,setContentValue] = useState('')
     const [imageContent,setImageContent] = useState('')
+    const [videoContent,setVideoContent] = useState('')
 
     useEffect(() => {
         if(isSuccess){
@@ -25,6 +26,7 @@ const NewMagazineForm = ({ users }) => {
             setTitle('')
             setContentValue('')
             setImageContent('')
+            setVideoContent('')
             navigate('/news')
         }
     },[isSuccess,navigate])
@@ -33,13 +35,14 @@ const NewMagazineForm = ({ users }) => {
     const onTitleChanged = e => setTitle(e.target.value)
     const onContentChanged = e => setContentValue(e.target.value)
     const onImageContentChanged = e => setImageContent(e.target.value)
+    const onVideoContentChanged = e => setVideoContent(e.target.value)
 
-    const canSave = [userId,title,content,imageContent].every(Boolean) && !isLoading
+    const canSave = [userId,title,content,imageContent,videoContent].every(Boolean) && !isLoading
 
     const onSaveMagazineClicked = async (e) => {
         e.preventDefault()
         if(canSave){
-            await addNewMagazine({ user: userId, title,content,imageContent })
+            await addNewMagazine({ user: userId, title,content,imageContent,videoContent})
         }
     }
 
@@ -102,6 +105,18 @@ const NewMagazineForm = ({ users }) => {
                     onChange={onImageContentChanged}
                     placeholder="Paste image URL here"
                     pattern="https?://.+"
+                />
+                <label className="form__label" htmlFor="videoContent">
+                Video URL:
+                </label>
+                <input 
+                    className={`form__input ${!videoContent ? "form__input--incomplete" : ''}`} 
+                    id="videoContent"
+                    name="videoContent"
+                    type="text"
+                    autoComplete="off"
+                    value={videoContent}
+                    onChange={onVideoContentChanged}
                 />
                 <label className="form__label form__checkbox-container" htmlFor="user">
                     Create by: 

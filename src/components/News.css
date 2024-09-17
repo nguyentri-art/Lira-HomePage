@@ -1,0 +1,28 @@
+.newsMain_box {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    background: #fff; /* White background for the box */
+    width: 800px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.newsMain_box:hover {
+    transform: translateY(-5px); /* Slightly lift the box */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background-color: #f9f9f9; /* Light background color on hover */
+}
+
+/* News Side Box Styles */
+
+/* Hover Effect for News Side Box */
+.newsSide_box:hover {
+    transform: translateY(-5px); /* Slightly lift the box */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background-color: #f9f9f9; /* Light background color on hover */
+}
+
