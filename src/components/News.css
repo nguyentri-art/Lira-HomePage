@@ -1,3 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+
+/* Loading Spinner */
+.loadingSpinner {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%; /* Circular shape */
+    width: 60px; /* Size of the spinner */
+    height: 60px; /* Size of the spinner */
+    animation: spin 1s linear infinite; /* Spin animation */
+    margin: 20px auto; /* Center the spinner and reduce margin */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* Loading Spinner */
+
+/* News */
+.newsContainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Start slightly above */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+h1 {
+    grid-column: span 2; /* Make the main heading span both columns */
+    font-size: 5em; /* Increase font size */
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker color for better contrast */
+    margin-top: 100px; /* Space above the heading */
+    margin-bottom: -1000px; /* Reduce space below the heading */
+    font-family: 'Dancing Script', cursive; /* Use the calligraphy font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+    animation: fadeIn 1s ease; /* Apply the fade-in animation */
+    z-index: 1000;
+    background-color: white; /* White background for h1 */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+h2 {
+    font-size: 1.8em; /* Increase font size for subheadings */
+    color: #555; /* Slightly lighter color */
+    margin: 10px 0; /* Space above and below */
+    text-align: left; /* Align to the left */
+    font-family: 'Dancing Script', cursive; /* Use the calligraphy font */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+h2:hover {
+    color: #333; /* Darker color on hover */
+}
+.newsMain {
+    display: flex;
+    flex-direction: column; /* Stack news items vertically */
+    gap: 15px; /* Space between news items */
+
+}
+  
+.newsSide {
+    display: flex;
+    flex-direction: column; /* Stack random news items vertically */
+    gap: 15px; /* Space between random news items */
+}
+  
+.newsMain_box {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    background: transparent;
+    width: 800px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.newsSide_box {
+    background: transparent;
+    margin:10px;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+    overflow: hidden; /* Hide overflow to maintain rounded corners */
+  }
+.newsMain_box img{
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+.newsSide_box img {
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; 
+  }
+.newsMain_box .newsContent , .newsSide_box .newsContent{
+    flex: 1;
+    padding: 20px;
+  }
+.newsMain_box .newsContent h3 , .newsSide_box .newsContent h3{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+.newsMain_box .newsContent p , .newsSide_box .newsContent p{
+    font-size: 16px;
+    color: #666;
+  }
+  /* News */
 .newsMain_box {
     display: flex;
     margin: 10px;
@@ -25,4 +152,111 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
     background-color: #f9f9f9; /* Light background color on hover */
 }
+/* Responsive Design for Tablets and Larger Screens */
+@media (max-width: 1280px) {
+    .newsContainer {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+    }
 
+    .newsMain_box, .newsSide_box {
+        width: 100%; /* Full width for news boxes */
+        margin: 10px 0; /* Add vertical margin for spacing */
+        flex-direction: row; /* Keep items in a row */
+    }
+
+    .newsMain_box img{
+        width: 40%; /* Adjust image width for better layout */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Optional: Rounded corners for images */
+    }
+    .newsSide_box img {
+        width: 100%; /* Adjust image width for better layout */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Optional: Rounded corners for images */
+    }
+
+    .newsMain_box .newsContent, .newsSide_box .newsContent {
+        flex: 1; /* Allow content to take remaining space */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .newsMain_box .newsContent h3, .newsSide_box .newsContent h3 {
+        font-size: 1.8em; /* Adjust font size for h3 */
+        margin: 10px 0; /* Space above and below */
+    }
+
+    .newsMain_box .newsContent p, .newsSide_box .newsContent p {
+        font-size: 16px; /* Adjust font size for p */
+        color: #666; /* Maintain color */
+    }
+
+    h1 {
+        font-size: 4em; /* Adjust font size for h1 */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust font size for h2 */
+    }
+}
+
+@media (max-width: 768px) {
+    .newsContainer {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack items in a single column */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .newsMain_box, .newsSide_box {
+        width: 100%; /* Full width for news boxes */
+        margin: 10px 0; /* Add vertical margin for spacing */
+        flex-direction: column; /* Reset to row layout for mobile */
+    }
+
+    .newsMain_box img, .newsSide_box img {
+        width: 100%; /* Make images full width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Optional: Rounded corners for images */
+    }
+
+    .newsMain_box .newsContent, .newsSide_box .newsContent {
+        flex: none; /* Reset flex property */
+        padding: 20px; /* Add padding for better spacing */
+        text-align: center; /* Center text for better appearance */
+    }
+
+    .newsMain_box .newsContent h3, .newsSide_box .newsContent h3 {
+        font-size: 1.5em; /* Adjust font size for h3 on mobile */
+        margin: 10px 0; /* Space above and below */
+    }
+
+    .newsMain_box .newsContent p, .newsSide_box .newsContent p {
+        font-size: 14px; /* Adjust font size for p on mobile */
+        color: #666; /* Maintain color */
+    }
+
+
+    h1 {
+        font-size: 3em; /* Further adjust font size for mobile */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Further adjust font size for mobile */
+    }
+
+    .loadingSpinner {
+        margin: 150px auto; /* Adjust spinner margin for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .newsContainer {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+    h1 {
+        font-size: 2.5em; /* Adjust font size for very small screens */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Adjust font size for very small screens */
+    }
+}

@@ -46,6 +46,9 @@ const News = () => {
     const randomNewsItems = newsItems ? getRandomMagazines(newsItems, 6) : []; // Get 3 random news items
 
     const renderRandomNewsItems = () => {
+        if (isLoading) return <div className="loadingSpinner"></div>;
+        if (isError) return <p>Error loading news items: {error?.message || 'Unknown error'}</p>;
+        if (!newsItems || newsItems.length === 0) return <p>No news items available</p>;
         return randomNewsItems.map((item) => (
             <div className="newsSide_box" key={item._id} onClick={() => handleNewsClick(item._id)}>
                 <img src={item.imageContent} alt={item.title} />
@@ -58,7 +61,7 @@ const News = () => {
     };
 
     const renderNewsItems = () => {
-        if (isLoading) return <p>Loading...</p>;
+        if (isLoading) return <div className="loadingSpinner"></div>;
         if (isError) return <p>Error loading news items: {error?.message || 'Unknown error'}</p>;
         if (!newsItems || newsItems.length === 0) return <p>No news items available</p>;
 
@@ -91,17 +94,23 @@ const News = () => {
             <main>
                 <div className="newsContainer">
                     <h1>We share culture and knowledge.</h1>
-                    <div className="newsMain">
+                    {isLoading ? (
+                    <div className="loadingSpinner"></div> // Show spinner while loading
+                ) : (
+                    <>
+                        <div className="newsMain">
                         <h2>News.</h2>
-                        {renderNewsItems()}
-                        {isProtectedRoute && (
-                            <Link to="/dash/news/new" className="addNewButton">Add New Magazine</Link>
-                        )}
-                    </div>
-                    <div className="newsSide">
-                        <h2>Random Dreamer</h2>
-                        {renderRandomNewsItems()}
-                    </div>
+                            {renderNewsItems()}
+                            {isProtectedRoute && (
+                                <Link to="/dash/news/new" className="addNewButton">Add New Magazine</Link>
+                            )}
+                        </div>
+                        <div className="newsSide">
+                            <h2>Random Dreamer</h2>
+                            {renderRandomNewsItems()}
+                        </div>
+                    </>
+                )}
                 </div>
             </main>
             <footer>
