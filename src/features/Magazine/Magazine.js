@@ -87,7 +87,7 @@ const Magazine = () => {
             </header>
             <main>
                 <div className="newsContainer">
-                    <h1>The Dreamer Time</h1>
+                    <h1>The Dreamer Times</h1>
                     <div className='newsMain'>
                         <div className="magazine-details">
                         <img src={magazine.imageContent} alt={magazine.title} className="magazine-image" />
