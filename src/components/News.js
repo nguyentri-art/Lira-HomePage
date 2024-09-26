@@ -43,7 +43,7 @@ const News = () => {
         return shuffled.slice(0, count);
     };
 
-    const randomNewsItems = newsItems ? getRandomMagazines(newsItems, 6) : []; // Get 3 random news items
+    const randomNewsItems = newsItems ? getRandomMagazines(newsItems, 8) : []; // Get random news items
 
     const renderRandomNewsItems = () => {
         if (isLoading) return <div className="loadingSpinner"></div>;

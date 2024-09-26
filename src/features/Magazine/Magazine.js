@@ -1,5 +1,6 @@
 import { Link,useParams } from 'react-router-dom';
 import React,{ memo } from 'react';
+import { useEffect } from 'react'; // Add this import
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons"
 import { useNavigate } from 'react-router-dom'
@@ -13,7 +14,11 @@ const truncateContent = (content, maxLength) => {
 
 const Magazine = () => {
 
-    const {id: magazineId} = useParams()
+    const {id: magazineId} = useParams();
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    },[magazineId]);
 
     const navigate = useNavigate()
 

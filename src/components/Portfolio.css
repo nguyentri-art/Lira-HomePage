@@ -1,0 +1,114 @@
+.public {
+    position: relative; /* Positioning for the public section */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    transition: background 0.5s ease; /* Smooth transition for background change */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+main {
+    flex-grow: 1; /* Allow main to grow and take available space */
+}
+
+.portfolioCard {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+    justify-content: center; /* Center items horizontally */
+    padding-top: 15%;
+    background-color: transparent;
+    gap: 20px; /* Space between cards */
+}
+
+.portfolio_card {
+    position: relative;
+    width: calc(50% - 20px); /* Two cards per row, accounting for gap */
+    max-width: 300px; /* Max width for larger screens */
+    height: 200px; /* Fixed height for uniformity */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+.portfolio_card.selected {
+    transform: scale(1.2); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Increase shadow for luxury effect */
+    z-index: 1; /* Bring selected card above others */
+}
+.portfolio_card:not(.selected) {
+    opacity: 0.3; /* Reduced opacity for unselected cards */
+}
+
+.portfolio_detail {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    padding: 10px; /* Add padding for better spacing */
+    border-radius: 8px; /* Rounded corners for detail box */
+}
+
+.portfolio_detail img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #ccc; /* Divider between image and text */
+}
+
+.portfolio_detail h2 {
+    font-size: 1.5em; /* Increase title size */
+    margin: 5px 0; /* Reduced space around title */
+    color: #333; /* Darker color for better contrast */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Subtle text shadow for depth */
+}
+
+
+.portfolio_detail p {
+    font-size: 1em; /* Increase description size */
+    color: #666; /* Grey text for description */
+    font-style: italic; /* Italicize description */
+    margin: 0; /* Remove default margin */
+}
+
+/* Add these styles to your Portfolio.css */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes dance {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.green {
+    color: green;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    animation: slideIn 3s linear infinite; /* Continuous left to right */
+}
+
+.red-violet {
+    color: red-violet;
+    animation: dance 1s infinite; /* Dancing animation */
+}
+
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .portfolioCard {
+        flex-direction: column; /* Stack items in a column */
+        align-items: center; /* Center items horizontally */
+        padding-top: 25%; /* Add space at the top */
+    }
+
+    .portfolio_card {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px; /* Space between items */
+    }
+}
