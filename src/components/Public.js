@@ -709,8 +709,8 @@ const Public = () => {
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Walter White</h4>
-                        <span>Chief Executive Officer</span>
+                        <h4>Ng Trí</h4>
+                        <span>Founder / Developer</span>
                     </div>
                     </div>
                 </div>
@@ -727,8 +727,8 @@ const Public = () => {
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Sarah Jhonson</h4>
-                        <span>Product Manager</span>
+                        <h4>Thức Võ</h4>
+                        <span>Co-op Founder / Developer </span>
                     </div>
                     </div>
                 </div>
@@ -837,7 +837,6 @@ const Public = () => {
             </section>
 
             <section id="faq" class="faq section light-background">
-
             
                 <div class="container section-title" data-aos="fade-up">
                     <h2>Frequently Asked Questions</h2>
@@ -905,7 +904,6 @@ const Public = () => {
                         </p>
                     </div>
                     </div>
-
                 </div>
 
             </section>
@@ -922,21 +920,21 @@ const Public = () => {
                     <i class="bi bi-geo-alt flex-shrink-0"></i>
                     <div>
                         <h3>Address</h3>
-                        <p>A420 Dream Street, Tân Bình, Sài Gòn 024420</p>
+                        <p>14 Văn Chung , Tân Bình, Sài Gòn . 70000</p>
                     </div>
                     </div>
                     <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                     <i class="bi bi-telephone flex-shrink-0"></i>
                     <div>
                         <h3>Call Us</h3>
-                        <p>+84 420 420 4420</p>
+                        <p>+84 354413136</p>
                     </div>
                     </div>
                     <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                     <i class="bi bi-envelope flex-shrink-0"></i>
                     <div>
                         <h3>Email Us</h3>
-                        <p>alittledream@gmail.com</p>
+                        <p>programingum@gmail.com</p>
                     </div>
                     </div>
 
