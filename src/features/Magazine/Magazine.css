@@ -82,9 +82,9 @@ h1 {
 }
 
 /* News */
-.newsContainer {
-    display:grid;
+/* .newsContainer {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap:20px;
-}
+} */
 
