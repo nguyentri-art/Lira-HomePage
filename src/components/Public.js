@@ -63,7 +63,7 @@ const Public = () => {
         };
 
     try {
-        const response = await fetch('https://alittledream-api.onrender.com//api/send-message', {
+        const response = await fetch('https://alittledream-api.onrender.com/api/send-message', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json', // Set content type to JSON
