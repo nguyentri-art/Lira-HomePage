@@ -1272,10 +1272,17 @@ section,
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  height: 100%;
+  height: auto;
 }
 
 .team .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .team-member .member-img img {
+  height: 300px;
+  width: 350px;
   position: relative;
   overflow: hidden;
 }

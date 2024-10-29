@@ -1,0 +1,85 @@
+/* Reset styles for all <a> tags */
+a {
+    text-decoration: none; /* Remove underline */
+    color: #3498db; /* Set a default color (blue) */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+
+/* Ensure the member image is responsive */
+.member-img {
+    position: relative; /* Position relative for absolute positioning of social icons */
+    overflow: hidden; /* Hide overflow to maintain clean edges */
+    border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+.member-img img {
+    width: 100%; /* Make the image take full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Optional: Add a hover effect to the image */
+.member-img:hover img {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Style for social icons */
+.social {
+    position: absolute; /* Position social icons over the image */
+    bottom: 10px; /* Position from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    display: flex; /* Flexbox for horizontal alignment */
+    gap: 10px; /* Space between icons */
+}
+
+.social a {
+    color: white; /* Icon color */
+    font-size: 1.5em; /* Size of the icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social a:hover {
+    color: #3498db; /* Change color on hover */
+}
+
+@media (max-width: 600px) {
+    .member-img {
+        max-width: 100%; /* Ensure full width on mobile */
+    }
+}
+/* Hover effect */
+a:hover {
+    color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Active link style */
+a:active {
+    color: #1c598a; /* Even darker blue when active */
+}
+
+/* Visited link style */
+a:visited {
+    color: #8e44ad; /* Purple color for visited links */
+}
+
+/* Optional: Style for links in navigation */
+.headerNavibar a {
+    font-weight: bold; /* Make navigation links bold */
+    padding: 5px 10px; /* Add some padding for better click area */
+    border-radius: 5px; /* Rounded corners for navigation links */
+}
+
+/* Optional: Style for links in footer */
+footer a {
+    color: #3498db; /* Default color for footer links */
+    text-decoration: underline; /* Underline for footer links */
+}
+
+footer a:hover {
+    color: #2980b9; /* Darker blue on hover for footer links */
+    text-decoration: none; /* Remove underline on hover */
+}
