@@ -360,6 +360,39 @@ body.index-page {
   }
 
 }
+
+@media (max-width: 420px) {
+  .aboutContainer_text {
+    max-width: 90%; /* Allow more width on small screens */
+    margin: 20px auto; /* Center the text with margin */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .clientSeasion {
+    padding: 20px 0; /* Reduce padding for better spacing */
+    text-align: center; /* Center the text */
+  }
+
+  .container_clients {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin: 0; /* Remove any default margin */
+  }
+
+  .client-logo_SS {
+    width: 70%; /* Adjust width for smaller screens */
+    margin: 10px 0; /* Add vertical margin */
+    padding: 5px; /* Add some padding for better spacing */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+  }
+
+  .client-logo_SS img {
+    height: auto; /* Maintain aspect ratio */
+    max-height: 50px; /* Limit height for smaller screens */
+    width: auto;
+    max-width: 100xp;
+  }
+}
 /* || About Us */
 .containerAbout_tittle {
   max-width: 1140px; /* Set a maximum width */
