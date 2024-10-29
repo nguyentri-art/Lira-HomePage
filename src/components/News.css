@@ -20,10 +20,21 @@
 /* Loading Spinner */
 
 /* News */
-.newsContainer {
+/* .newsContainer {
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:20px;
+} */
+.newsContainer {
+    display: contents;
+}
+
+@media (min-width: 480px) {
+    .newsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
 
 @keyframes fadeIn {
