@@ -38,10 +38,6 @@ const Public = () => {
               type: 'bullets',
               clickable: true
             },
-            navigation: { // Optional: Add navigation buttons if needed
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
             breakpoints: {
               320: {
                 slidesPerView: 1,
@@ -51,8 +47,7 @@ const Public = () => {
                 slidesPerView: 2,
                 spaceBetween: 20
               }
-            },
-            grabCursor: true, // Enable grabbing cursor for dragging
+            }
           };
       
           const swiper = new Swiper('.init-swiper', swiperConfig);
