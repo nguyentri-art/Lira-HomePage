@@ -53,6 +53,41 @@ const Public = () => {
           const swiper = new Swiper('.init-swiper', swiperConfig);
       }, []);
 
+    const handleSubmit = async ( event ) => {
+        event.preventDefault(); // Prevent the default form submission
+        const formData = {
+            name: event.target.name.value,
+            email: event.target.email.value,
+            subject: event.target.subject.value,
+            message: event.target.message.value,
+        };
+
+    try {
+        const response = await fetch('https://alittledream-api.onrender.com//api/send-message', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', // Set content type to JSON
+            },
+            body: JSON.stringify(formData), // Convert form data to JSON,
+        });
+
+        if (response.ok) {
+            // Handle success
+            document.querySelector('.sent-message').style.display = 'block';
+            document.querySelector('.error-message').style.display = 'none';
+        } else {
+            // Handle error
+            document.querySelector('.error-message').innerText = 'There was an error sending your message.';
+            document.querySelector('.error-message').style.display = 'block';
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        document.querySelector('.error-message').innerText = 'There was an error sending your message.';
+        document.querySelector('.error-message').style.display = 'block';
+    }
+        
+    }
+
     const content = (
         <section className="public">
             <header className='headerNavi'>
@@ -939,29 +974,29 @@ const Public = () => {
                 </div>
 
                 <div class="col-lg-7">
-                    <form action="" method="" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-                    <div class="row gy-4">
+                <form onSubmit={handleSubmit} className="php-email-form" data-aos="fade-up" data-aos-delay="500">
+                    <div className="row gy-4">
 
-                        <div class="col-md-6">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required=""/>
+                        <div className="col-md-6">
+                        <input type="text" name="name" className="form-control" placeholder="Your Name" required=""/>
                         </div>
 
-                        <div class="col-md-6 ">
-                        <input type="email" class="form-control" name="email" placeholder="Your Email" required=""/>
+                        <div className="col-md-6 ">
+                        <input type="email" className="form-control" name="email" placeholder="Your Email" required=""/>
                         </div>
 
-                        <div class="col-md-12">
-                        <input type="text" class="form-control" name="subject" placeholder="Subject" required=""/>
+                        <div className="col-md-12">
+                        <input type="text" className="form-control" name="subject" placeholder="Subject" required=""/>
                         </div>
 
-                        <div class="col-md-12">
-                        <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                        <div className="col-md-12">
+                        <textarea className="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                         </div>
 
-                        <div class="col-md-12 text-center">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                        <div className="col-md-12 text-center">
+                        <div className="loading">Loading</div>
+                        <div className="error-message"></div>
+                        <div className="sent-message">Your message has been sent. Thank you!</div>
 
                         <button type="submit">Send Message</button>
                         </div>
