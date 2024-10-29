@@ -1281,8 +1281,8 @@ section,
 }
 
 .team .team-member .member-img img {
-  height: 300px;
-  width: 350px;
+  height: 320px;
+  width: 500px;
   position: relative;
   overflow: hidden;
 }

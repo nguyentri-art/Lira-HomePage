@@ -4,7 +4,18 @@ a {
     color: #3498db; /* Set a default color (blue) */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
 }
+/* Center images in the row on mobile devices */
+.row {
+    margin-right: 0; /* Remove right margin */
+    margin-left: 0; /* Remove left margin */
+}
 
+/* Adjust the image container for better centering */
+.portfolio-item {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the images */
+    align-items: center; /* Center vertically */
+}
 /* Hover effect */
 a:hover {
     color: #2980b9; /* Darker blue on hover */

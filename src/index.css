@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Ensure the container for team members is set up correctly */
 html {
   scroll-behavior: smooth;
 }
