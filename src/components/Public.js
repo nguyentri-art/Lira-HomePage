@@ -729,30 +729,29 @@ const Public = () => {
                     <p>The dreamers</p>
                 </div>
                 <div class="container">
-                    <div class="row gy-4">
+                    <div class="row gy-4 justify-content-center">
 
                         <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                            <div class="team-member">
+                            <div class="team-member" style={{ margin: '0 10px' }}>
                                 <div class="member-img">
-                                    <img src="https://cdn4.whatculture.com/images/2022/08/fcd6d73c6a4be56e-1200x675.jpg" class="img-fluid" alt=""/>
+                                    <img src="https://static.topcv.vn/avatars/5x0BYLLCJd26vgvl66Yn_61af3c5c5ecf2_cvtpl.jpg" class="img-fluid" alt=""/>
                                     <div class="social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.facebook.com/now.Umhere/"><i class="bi bi-facebook"></i></a>
+                                    <a href="https://www.instagram.com/ngtri_umhere/"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://github.com/nguyentri-art"><i class="bi bi-github"></i></a>
                                     </div>
                                 </div>
                             <div class="member-info">
-                                <h4>Harry Portter</h4>
-                                <span>Vice President</span>
+                                <h4>Ng Tri</h4>
+                                <span>The Creator</span>
                             </div>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                            <div class="team-member">
+                            <div class="team-member" style={{ margin: '0 10px' }}>
                             <div class="member-img">
-                                <img src="https://th.bing.com/th/id/OIP.ftBtao-ZGU159wfsl26e1QHaEs?rs=1&pid=ImgDetMain" class="img-fluid" alt=""/>
+                                <img src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-1/379847057_2157758407756457_9149611355296265739_n.jpg?stp=dst-jpg_s100x100&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=-8CMgqe77SkQ7kNvgEO7sbx&_nc_zt=24&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=AkZMDq41c0RJEzBv2LvB1Nr&oh=00_AYD40wMRpuIAAR7XDxZQ1tcv2MGOH-ZEzNg5lZ2HvshP3Q&oe=675815DB" class="img-fluid" alt=""/>
                                 <div class="social">
                                 <a href=""><i class="bi bi-twitter-x"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -761,48 +760,11 @@ const Public = () => {
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>Mr Robot</h4>
-                                <span>Founderss / Chief Innovation Officer </span>
+                                <h4>Mr Thuc</h4>
+                                <span>Founders / Chief Innovation Officer </span>
                             </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-                            <div class="team-member">
-                                <div class="member-img">
-                                    <img src="https://vignette.wikia.nocookie.net/harrypotter/images/6/65/ProfessorMcGonagall-HBP.jpg/revision/latest?cb=20100612114856" class="img-fluid" alt=""/>
-                                    <div class="social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                                <div class="member-info">
-                                    <h4>Professor Mcgonagall</h4>
-                                    <span>CTO</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                            <div class="team-member">
-                            <div class="member-img">
-                                <img src="https://th.bing.com/th/id/R.4ed07e3dd52e92b778b034e056dec7c6?rik=pr6UzFK7uFeMqQ&pid=ImgRaw&r=0" class="img-fluid" alt=""/>
-                                <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>Mr Anderson</h4>
-                                <span>Accountant</span>
-                            </div>
-                            </div>
-                        </div>
-
                     </div>
 
                 </div>
