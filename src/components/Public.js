@@ -9,6 +9,8 @@ import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
 import "../assets/vendor/glightbox/css/glightbox.min.css";
 import "../assets/vendor/swiper/swiper-bundle.min.css";
 import MEImage from "../assets/img/team/ME-2.png";
+import MRThucImage from "../assets/img/team/Mr-Thuc.jpg";
+import TeamImage from "../assets/img/team/team-3.jpg";
 
 import "../assets/css/main.css";
 
@@ -752,7 +754,7 @@ const Public = () => {
                         <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                             <div class="team-member" style={{ margin: '0 10px' }}>
                             <div class="member-img">
-                                <img src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-1/379847057_2157758407756457_9149611355296265739_n.jpg?stp=dst-jpg_s100x100&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=-8CMgqe77SkQ7kNvgEO7sbx&_nc_zt=24&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=AkZMDq41c0RJEzBv2LvB1Nr&oh=00_AYD40wMRpuIAAR7XDxZQ1tcv2MGOH-ZEzNg5lZ2HvshP3Q&oe=675815DB" class="img-fluid" alt=""/>
+                                <img src={MRThucImage} class="img-fluid" alt=""/>
                                 <div class="social">
                                 <a href=""><i class="bi bi-twitter-x"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -762,7 +764,25 @@ const Public = () => {
                             </div>
                             <div class="member-info">
                                 <h4>Mr Thuc</h4>
-                                <span>Founders / Chief Innovation Officer </span>
+                                <span>Founder / Chief Innovation Officer </span>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                            <div class="team-member" style={{ margin: '0 10px' }}>
+                            <div class="member-img">
+                                <img src={TeamImage} class="img-fluid" alt=""/>
+                                <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Oliver Henry Clarke</h4>
+                                <span>Graphic Designer / UI/UX Designer</span>
                             </div>
                             </div>
                         </div>
