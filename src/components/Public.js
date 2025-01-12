@@ -8,6 +8,7 @@ import "../assets/vendor/bootstrap/css/bootstrap.min.css";
 import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
 import "../assets/vendor/glightbox/css/glightbox.min.css";
 import "../assets/vendor/swiper/swiper-bundle.min.css";
+import MEImage from "../assets/img/team/ME-2.png";
 
 import "../assets/css/main.css";
 
@@ -734,7 +735,7 @@ const Public = () => {
                         <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                             <div class="team-member" style={{ margin: '0 10px' }}>
                                 <div class="member-img">
-                                    <img src="https://static.topcv.vn/avatars/5x0BYLLCJd26vgvl66Yn_61af3c5c5ecf2_cvtpl.jpg" class="img-fluid" alt=""/>
+                                    <img src={MEImage} class="img-fluid" alt=""/>
                                     <div class="social">
                                     <a href="https://www.facebook.com/now.Umhere/"><i class="bi bi-facebook"></i></a>
                                     <a href="https://www.instagram.com/ngtri_umhere/"><i class="bi bi-instagram"></i></a>

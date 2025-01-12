@@ -16,6 +16,14 @@ a {
     justify-content: center; /* Center the images */
     align-items: center; /* Center vertically */
 }
+
+/* Ensure images maintain their aspect ratio */
+img {
+    max-width: 100%; /* Prevent horizontal stretching */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
 /* Hover effect */
 a:hover {
     color: #2980b9; /* Darker blue on hover */
