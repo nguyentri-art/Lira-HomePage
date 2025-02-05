@@ -19,6 +19,8 @@ import Portfolio from './components/Portfolio';
 import News from './components/News';
 import NewMagazine from './features/Magazine/NewMagazine';
 import Magazine from './features/Magazine/Magazine';
+import MagazineList from './features/Magazine/MagazineList';
+import EditMagazine from './features/Magazine/EditMagazine';
 
 function App() {
   useTitle('A Little Dream - Where your dream come true')
@@ -58,6 +60,8 @@ function App() {
                 <Route path="news">
                   <Route index element={<News />} />
                   <Route path="new" element={<NewMagazine />} />
+                  <Route path="magazineList" element={<MagazineList />} />
+                  <Route path=":id" element={<EditMagazine />} />  {/* New route for EditMagazine */}
                 </Route>
 
               </Route>{/* End Dash */}

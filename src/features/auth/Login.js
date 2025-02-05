@@ -61,7 +61,7 @@ const Login = () => {
 
     const errClass = errMsg ? "errmsg" : "offscreen"
 
-    console.log(isLoading + " isLoading");
+    // console.log(isLoading + " isLoading");
     if (isLoading) return <div className='loader-container'>
         <div className="loader"></div>
         <h2 className="loader-text">Loading</h2>

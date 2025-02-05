@@ -1,0 +1,44 @@
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__thead {
+    background-color: #000000;
+}
+
+.table__th, .table__td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #000000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .table__th, .table__td {
+        display: block;
+        text-align: right;
+    }
+
+    .table__th {
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .table__th::before {
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label);
+        text-align: left;
+    }
+}

@@ -14,7 +14,7 @@ const truncateContent = (content, maxLength) => {
 
 const Magazine = () => {
 
-    const {id: magazineId} = useParams();
+   const {id: magazineId} = useParams();
 
     useEffect(() => {
         window.scrollTo(0,0);
@@ -116,7 +116,7 @@ const Magazine = () => {
                             <p className="magazine-dates">Created on: <span>{create}</span></p>
                             <p className="magazine-dates">Updated on: <span>{update}</span></p>
                            
-                            <button className="btn-edit" onClick={handleEdit}>Edit</button>
+                            
                         </div>
                     </div>
                     <div className='newsSide'>

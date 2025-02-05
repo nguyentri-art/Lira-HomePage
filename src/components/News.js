@@ -28,14 +28,14 @@ const News = () => {
         error
     } = useGetMagazinesQuery();
 
-    useEffect(() => {
-        console.log('Query state changed:', { 
-            isLoading, 
-            isError, 
-            error, 
-            newsItems
-        });
-    }, [isLoading, isError, error, newsItems]);
+    // useEffect(() => {
+    //     console.log('Query state changed:', { 
+    //         isLoading, 
+    //         isError, 
+    //         error, 
+    //         newsItems
+    //     });
+    // }, [isLoading, isError, error, newsItems]);
 
       // Function to get random magazines
       const getRandomMagazines = (magazines, count) => {

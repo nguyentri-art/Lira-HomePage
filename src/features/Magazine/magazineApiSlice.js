@@ -20,7 +20,7 @@ export const magazineApiSlice = apiSlice.injectEndpoints({
                 },
             }),
             transformResponse: responseData => {
-                console.log('Received response:', responseData);
+
                 let data;
                 if (Array.isArray(responseData)) {
                     data = responseData;
@@ -44,7 +44,6 @@ export const magazineApiSlice = apiSlice.injectEndpoints({
             async onQueryStarted(arg, { queryFulfilled }) {
                 try {
                     const { data } = await queryFulfilled;
-                    console.log('Query fulfilled with data:', data);
                 } catch (error) {
                     console.error('Query failed:', error);
                 }
