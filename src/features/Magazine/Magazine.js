@@ -45,8 +45,6 @@ const Magazine = () => {
         const trimmedMagazineId = String(magazineId).trim(); // Trim the magazineId
         const trimmedMagId = String(mag._id).trim(); // Trim the magazine's _id
     
-        console.log(`Comparing ${trimmedMagId} with ${trimmedMagazineId}`); // Log comparison
-    
         return trimmedMagId === trimmedMagazineId; 
         });
 

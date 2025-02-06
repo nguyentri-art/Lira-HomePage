@@ -47,19 +47,44 @@ const EditMagazineForm = ({ magazine, users}) => {
     const onContentChanged = e => setContentMagazine(e.target.value);
     const onUserIDChanged = e => setUserId(e.target.value);
 
-    const canSave = [title,videoContent,imageContent,contentMagazine,userId].every(Boolean) && !isLoading
+    const canSave = [title,userId,contentMagazine,imageContent,videoContent].every(Boolean) && !isLoading
 
     const onSaveMagazineClicked = async (e) => {
         if(canSave){
-            await updateMagazine({id: magazine.id,user:userId, title,videoContent,imageContent,content})
+            const updateData = {
+                id: magazine._id,
+                user: userId,
+                title,
+                content: contentMagazine,
+                imageContent,
+                videoContent
+            };
+            try {
+                const response = await updateMagazine(updateData);
+                console.log("Update response:", response); // Log the response
+    
+                // Check if the response indicates success
+                if (response && response.id) {
+                    // Reset fields only if the update was successful
+                    setTitle('');
+                    setVideoContent('');
+                    setImageContent('');
+                    setContentMagazine('');
+                    setUserId('');
+                    navigate('/dash/news');
+                } else {
+                    console.error("Update failed:", response);
+                }
+            } catch (error) {
+                console.error("Failed to save magazine:", error);
+            }
         }
     }
-
+ 
     const onDeleteNoteClicked = async () => {
-        await deleteMagazine({ id: magazine.id })
+        await deleteMagazine({ id: magazine._id })
     }
    
-
     const created = new Date(magazine.createdAt).toLocaleString('en-US', {day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'})
     const updated = new Date(magazine.updatedAt).toLocaleString('en-US', { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' })
 
@@ -76,7 +101,6 @@ const EditMagazineForm = ({ magazine, users}) => {
     const errClass = (isError || isDelError) ? "errmsg" : "offscreen"
     const validTitleClass = !title ? "form__input--incomplete" : ''
  
-
     const errContent = (error?.data?.message || delerror?.data?.message) ?? ''
 
     let deleteButton = null
